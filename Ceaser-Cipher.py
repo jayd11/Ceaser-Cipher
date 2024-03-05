@@ -32,7 +32,7 @@ def caesar(cipher_direction, start_text, shift_amount):
 should_continue = True
 while should_continue:
     direction = input("Enter encrypt or decrypt: ")
-    if not direction == 'encrypt' or direction == 'decrypt':
+    if not (direction == 'encrypt' or direction == 'decrypt'):
         print(f"{direction} is not a valid input.")
         continue
     text = input(f"\nEnter text to {direction}: ").upper()
